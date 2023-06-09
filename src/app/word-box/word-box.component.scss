@@ -1,0 +1,48 @@
+.word-box {
+    padding: 12px 24px;
+    border: 2px solid #007ED3;
+    margin: 24px;
+    border-radius: 10px;
+
+    &-main{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span {
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all ease 0.5s;
+            &:hover {
+                color: #007ED3;
+            }
+        }
+
+        button {
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            img {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+
+    &-description {
+        font-size: 16px;
+        font-weight: 400;
+        max-height: 0px;
+        transition: all linear 1s;
+        overflow: hidden;
+
+        &.show {
+            max-height: 100px;
+            overflow: scroll;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    }
+}

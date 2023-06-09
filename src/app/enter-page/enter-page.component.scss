@@ -1,0 +1,33 @@
+.enter-page {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("../../assets/img/bg.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: all ease 1s;
+
+    &.hide{
+        transform: translateX(-100%);
+    }
+
+    &-title {
+        font-size: 100px;
+        color: #00FFFF;
+    }
+
+    &-button {
+        font-size: 36px;
+        font-weight: 600;
+        padding: 16px 96px;
+        border-radius: 41px;
+        color: #007ED3;
+        border: 3px solid #007ED3;
+        cursor: pointer;
+    }
+}

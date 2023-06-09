@@ -1,0 +1,64 @@
+.main-page {
+  width: 100vw;
+  height: 100vh;
+
+  &-header {
+    padding: 12px 64px;
+    background-color: #007ed3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .search-box {
+      width: 50%;
+      height: 40px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 20px;
+      overflow: hidden;
+
+      input {
+        width: 88%;
+        outline: none;
+        border: none;
+        font-size: 18px;
+        font-weight: 400;
+        padding-left: 12px;
+      }
+
+      button {
+        width: 6%;
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+
+        img {
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+
+    .lang-btn {
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      margin-left: 24px;
+
+      img {
+        height: 36px;
+        width: 36px;
+      }
+    }
+  }
+
+  &-main {
+    height: calc(100vh - 65px);
+    overflow: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

@@ -1,16 +1,19 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { EnterPageComponent } from './enter-page/enter-page.component';
+import { MainPageComponent } from './main-page/main-page.component';
+import { WordBoxComponent } from './word-box/word-box.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EnterPageComponent,
+    MainPageComponent,
+    WordBoxComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,31 @@
+<div class="main-page">
+  <div class="main-page-header">
+    <div class="search-box">
+      <input type="text" (change)="setSearchWord($event)" [value]="searchWord">
+      <button (click)="search()">
+        <img src="../../assets/img/search.png">
+      </button>
+      <button (click)="cancelSearch()">
+        X
+      </button>
+    </div>
+    <div>
+      <button class="lang-btn" (click)="setLang('ru')">
+        <img src="../../assets/img/rus.webp" />
+      </button>
+      <button class="lang-btn" (click)="setLang('en')">
+        <img src="../../assets/img/uk.webp" />
+      </button>
+      <button class="lang-btn" (click)="hideMainPage()">
+        <img src="../../assets/img/exit.png" />
+      </button>
+    </div>
+  </div>
+  <div class="main-page-main">
+    <app-word-box
+      *ngFor="let word of words"
+      [title]="word.title"
+      [description]="word.description"
+    ></app-word-box>
+  </div>
+</div>

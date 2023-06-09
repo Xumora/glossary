@@ -1,0 +1,11 @@
+<div class="word-box">
+    <div class="word-box-main">
+        <span (click)="showDescription($event)">{{ title }}</span>
+        <button (click)="textToSpeech()">
+            <img src="../../assets/img/volume.png">
+        </button>
+    </div>
+    <div class="word-box-description">
+        <span>{{ description }}</span>
+    </div>
+</div>
